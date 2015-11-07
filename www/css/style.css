@@ -13,6 +13,10 @@
     padding: 0 15px;
 }
 
+p.large {
+  font-size: 2em;
+}
+
 #intro, #work, #team {padding-top: 4rem;}
 
 
@@ -262,4 +266,12 @@ nav a.button-collapse {
 
 footer.page-footer {
     margin-top: 0px !important;
+}
+
+#when {
+  text-align: center;
+  background-color: #FF8D00;
+}
+#when h1 {
+  color: white;
 }
