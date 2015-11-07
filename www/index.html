@@ -180,6 +180,70 @@
 </div>
 
 
+<div class="parallax-container" id="map">
+    <!-- google map -->
+    <div id="google_map">
+      <!--
+      <iframe width="100%" height="175" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYTUpBxquEmsRK6a_yBy3y3Y&key=AIzaSyBVBDo2XD8BTZzCkyiMaR8K204flrYspAU" allowfullscreen></iframe>
+      -->
+    </div>
+
+    <script>
+    function initializeGoogleMaps() {
+
+      var request = {
+        placeId: 'ChIJYTUpBxquEmsRK6a_yBy3y3Y'
+      };
+
+      function callback(place, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+          var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location
+          });
+          map.setCenter(marker.getPosition());
+        }
+      }
+
+      console.log(document.getElementById('google_map'));
+
+      var map = new google.maps.Map(document.getElementById('google_map'), {
+        zoom: 14,
+        center: {
+          lat: -33.880983,
+          lng: 151.21646540000006
+        },
+        disableDefaultUI: true,
+        scrollwheel: false,
+      });
+
+      service = new google.maps.places.PlacesService(map);
+      service.getDetails(request, callback);
+    }
+
+    /*
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: {
+            lat: -33,
+            lng: 151
+          },
+          disableDefaultUI: true,
+          scrollwheel: false,
+          place_id: 'ChIJYTUpBxquEmsRK6a_yBy3y3Y'
+        });
+      }
+      */
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZa5QIs-wvLd53qlCeXY9Frzmo7I8ltss&libraries=places&sensor=false&signed_in=false&callback=initializeGoogleMaps" async defer></script>
+
+    <!-- /google map -->
+</div>
+
+
+
 <!--Team-->
 <div class="section scrollspy" id="who">
     <div class="container">
@@ -265,74 +329,35 @@
 </div>
 
 
+<div class="section scrollspy" id="register">
+    <div class="container">
+        <a id=""><h1 class="header text_b">Register Now!</h1></a>
+    </div>
+</div>
+
+
+<div class="section scrollspy" id="registrationform">
+    <div class="container">
+      <div class="row">
+          <div class="col l12 s12">
+            <!-- Eventbrite to go here -->
+            <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com.au/tickets-external?eid=19454907151&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.com.au/r/etckt">Powered by Eventbrite</a></div></div>
+          </div>
+        </div>
+    </div>
+</div>
 
 <!--Footer-->
 <footer id="contact" class="page-footer default_color scrollspy">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <form class="col s12" action="contact.php" method="post">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="mdi-action-account-circle prefix white-text"></i>
-                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                            <label for="icon_prefix" class="white-text">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" name="email" type="email" class="validate white-text">
-                            <label for="icon_email" class="white-text">Email-id</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <i class="mdi-editor-mode-edit prefix white-text"></i>
-                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
-                            <label for="icon_prefix2" class="white-text">Message</label>
-                        </div>
-                        <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
-                                <i class="mdi-content-send right white-text"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">joashpereira.com</h5>
-                <ul>
-                    <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
-                    <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Social</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="https://www.behance.net/joashp">
-                            <i class="small fa fa-behance-square white-text"></i> Behance
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
-                            <i class="small fa fa-facebook-square white-text"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://github.com/joashp">
-                            <i class="small fa fa-github-square white-text"></i> Github
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
-                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="footer-copyright default_color">
-        <div class="container">
-            Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        <div class="container center">
+            Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>
+            |
+            Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+            |
+            Hacked by <a class="white-text" href="http://developerjack.com">Jack Skinner</a>
+            for <a class="white-text" href="http://meetupsmixer.org">Meetups Mixer</a>
+
         </div>
     </div>
 </footer>
