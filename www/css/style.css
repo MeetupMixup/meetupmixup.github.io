@@ -17,14 +17,14 @@
 
 
 #index-banner {
-    min-height: 632px;
-    max-height: 864px;
+    min-height: 232px;
+    max-height: 364px;
     position: relative;
     background-color: #2196F3;
 }
 
 #nav_f{
-    box-shadow: none !important; 
+    box-shadow: none !important;
     -webkit-box-shadow:none !important;
 }
 
@@ -257,7 +257,7 @@ nav a.button-collapse {
 }
 
 .parallax-container {
-    max-height: 400px;
+    max-height: 600px;
 }
 
 footer.page-footer {
