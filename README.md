@@ -8,3 +8,6 @@ Based on the [materializecss](http://materializecss.com/) design by [Josh Pereir
 ```
 php -S 0.0.0.0:8099 -t www/
 ```
+
+## Deployment
+meetupsmixer.org is deployed via [Codeship](codeship.com) to an AWS S3 bucket owned by [developerjack](https://www.twitter.com/developerjack).  It auto deploys off `feature/mixer` for the time being.
