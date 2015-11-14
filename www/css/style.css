@@ -297,3 +297,15 @@ footer.page-footer {
     width: 100% !important;
     height: 100% !important;
 }
+span.gold{
+    border-top: 6px solid gold;
+    border-bottom: 6px solid gold;
+}
+span.silver{
+    border-top: 6px solid silver;
+    border-bottom: 6px solid silver;
+}
+span.bronze{
+    border-top: 6px solid saddlebrown;
+    border-bottom: 6px solid saddlebrown;
+}
