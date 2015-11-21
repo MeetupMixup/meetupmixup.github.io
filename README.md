@@ -6,7 +6,7 @@ Based on the [materializecss](http://materializecss.com/) design by [Josh Pereir
 
 ## Usage
 ```
-php -S 0.0.0.0:8099 -t www/
+php -S 0.0.0.0:8099 -t .
 ```
 
 ## Deployment
