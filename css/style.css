@@ -27,14 +27,15 @@ p.large {
     background-color: #2196F3;
 }
 
+
 #nav_f{
     box-shadow: none !important;
     -webkit-box-shadow:none !important;
 }
 
 .text_h {
-    padding: 15% 0;
-    font-size: 6.0em;
+    padding: 10% 0;
+    font-size: 4.0em;
     font-weight: 100;
     color:white;
 }
@@ -268,11 +269,12 @@ footer.page-footer {
     margin-top: 0px !important;
 }
 
-#when, #register {
+#when, #register, #mumu {
   text-align: center;
   background-color: #FF8D00;
 }
-#when h1 , #register h1{
+#when h1, #register h1, #mumu h1, #mumu h2, #mumu h3, #mumu h4
+{
   color: white;
 }
 #map {
