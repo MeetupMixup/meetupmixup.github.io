@@ -247,6 +247,7 @@ nav a.button-collapse {
 
 .card-avatar .card-content {
     text-align: center;
+    min-height: 188px;
 }
 
 .card .card-content p {
